@@ -1,5 +1,4 @@
 
-
 var Canvas = require('canvas-browserify')
 var getStats = require('./stats')
 var pull = require('pull-stream')
@@ -32,10 +31,10 @@ function parseUnits (header) {
 
 var graph = module.exports = function (table, opts) {
   opts = opts || {}
-  var canvas = CANVAS = Canvas()
+  var canvas = Canvas()
   canvas.width = opts.width || 300
   canvas.height = opts.height || 150
-  var ctx = CTX = canvas.getContext('2d')
+  var ctx = canvas.getContext('2d')
 
   //uh, actually, I don't need this yet,
   //because I only have 3 columns.
